@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mon Portfolio</title>
+</head>
+<body>
+    <header style="position: relative;">
+       
+        <div style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
+            <img src="C:\Users\rayen\Desktop\portfilio\imageprofiljpg.jpg" alt="Image de profil" style="width: 150px; height: 150px; border-radius: 50%; margin-right: 10px;" />
+            <p>Je suis Rayen MEDDEB, un développeur Full-Stack passionné par la technologie.</p>
+        </div>
+        <button id="toggle-mode" style="position: absolute; top: 20px; right: 20px;">Basculer le mode</button>
+    </header>
+    <main>
+        <section id="personal-info">
+            <h2>Informations personnelles</h2>
+            <p><strong>Nom :</strong> Rayen MEDDEB</p>
+            <p><strong>Email :</strong> <a href="mailto:rayen.meddeb@enicar.ucar.tn">rayen.meddeb@enicar.ucar.tn</a></p>
+            <p><strong>Téléphone :</strong> +216 20 462 261</p>
+            <p><strong>GitHub :</strong> <a href="https://github.com/rayenmeddeb">rayenmeddeb</a></p>
+            <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/rayen-meddeb">rayen-meddeb</a></p>
+            <p><strong>Localisation :</strong> Ariana, Tunisie</p>
+        </section>
+        <section id="technical-skills">
+            <h2>Compétences techniques</h2>
+            <ul>
+                <li><strong>Langages Frontend :</strong> JavaScript, TypeScript, HTML, CSS</li>
+                <li><strong>Langages Backend :</strong> Python, Java, PL/SQL, C++</li>
+                <li><strong>Frameworks Frontend :</strong> Angular, React JS</li>
+                <li><strong>Frameworks Backend :</strong> Spring Boot</li>
+                <li><strong>Bases de données :</strong> Oracle, MySQL, NoSQL (MongoDB)</li>
+                <li><strong>API :</strong> REST API, GraphQL</li>
+                <li><strong>DevOps :</strong> Docker, Kubernetes, Jenkins, Git</li>
+                <li><strong>Tests :</strong> JUnit, Karma, tests d’intégration</li>
+                <li><strong>Environnements :</strong> Linux (Ubuntu, Rocky, Kali)</li>
+            </ul>
+        </section>
+        <section id="experience">
+            <h2>Expérience professionnelle</h2>
+            <h3>Stage Développeur Full-Stack à Lumière Logistique</h3>
+            <p>Nabeul, Tunisie (Juillet - Septembre 2024)</p>
+            <ul>
+                <li>Développement de l’application Transtruck pour le suivi des ordres de transport.</li>
+                <li><strong>Technologies :</strong> Spring Boot, Angular, MySQL, Python.</li>
+                <li><strong>Méthodologies :</strong> Scrum, tests automatisés avec JUnit, Mockito et Karma.</li>
+                <li>Gestion de code source avec Git.</li>
+            </ul>
+            <div class="image-gallery">
+                <img src="transtruck/article1.PNG" alt="Article 1" />
+                <img src="transtruck/client1.PNG" alt="Client 1" />
+                <img src="transtruck/client2 - Copy.PNG" alt="Client 2" />
+                <img src="transtruck/dash1.PNG" alt="Dashboard 1" />
+                <img src="transtruck/login1.PNG" alt="Login 1" />
+                <img src="transtruck/ordre1.PNG" alt="Ordre 1" />
+                <img src="transtruck/ordre2.PNG" alt="Ordre 2" />
+                <img src="transtruck/ordre3.PNG" alt="Ordre 3" />
+                <img src="transtruck/suiv1.PNG" alt="Suivi 1" />
+                <img src="transtruck/suiv2.PNG" alt="Suivi 2" />
+                <img src="transtruck/user1.PNG" alt="User 1" />
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projets académiques</h2>
+            <div class="project-card">
+                <h3>Dart Numérique</h3>
+                <p>Application web pour la gestion d’art numérique et de galeries virtuelles.</p>
+                <div class="image-gallery">
+                    <img src="art numerique/an1.PNG" alt="Art Numérique 1" />
+                    <img src="art numerique/an2.PNG" alt="Art Numérique 2" />
+                    <img src="art numerique/an3.PNG" alt="Art Numérique 3" />
+                    <img src="art numerique/an4.PNG" alt="Art Numérique 4" />
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>ForumForce</h3>
+                <p>Application web de gestion de forums d’entreprises.</p>
+                <div class="image-gallery">
+                    <img src="forumforce/forum1.NG.PNG" alt="Forum 1" />
+                    <img src="forumforce/forum3.png" alt="Forum 3" />
+                </div>
+            </div>
+        </section>
+        <section id="education">
+            <h2>Formation</h2>
+            <ul>
+                <li><strong>École Nationale d’Ingénieurs de Carthage (ENICAR)</strong>, Ariana, Tunisie (2022 - Aujourd’hui)</li>
+                <li><strong>Institut Préparatoire aux Études d’Ingénieurs de Nabeul (IPEIN)</strong>, Nabeul, Tunisie (2020 - 2022)</li>
+                <li><strong>Lycée Secondaire Bouargoub</strong>, Nabeul, Tunisie (2019 - 2020)</li>
+            </ul>
+        </section>
+        <section id="languages">
+            <h2>Langues</h2>
+            <ul>
+                <li>Arabe : Langue maternelle</li>
+                <li>Français : Courant</li>
+                <li>Anglais : Courant</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:rayen.meddeb@enicar.ucar.tn">rayen.meddeb@enicar.ucar.tn</a></p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        const toggleButton = document.getElementById('toggle-mode');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+            document.querySelector('header').classList.toggle('light-mode');
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.toggle('light-mode');
+            });
+            document.querySelector('footer').classList.toggle('light-mode');
+        });
+    </script>
+</body>
+</html>

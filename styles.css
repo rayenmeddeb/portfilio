@@ -1,0 +1,122 @@
+/* Couleurs noir et rose */
+:root {
+    --primary-color: #ff4081; /* Rose */
+    --secondary-color: #ff4081; /* Rose */
+    --background-color-dark: #000000; /* Noir */
+    --background-color-light: #ffffff;
+    --text-color-light: #ff4081; /* Rose pour le texte */
+    --text-color-dark: #ffffff; /* Blanc pour le texte sur fond noir */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+body.light-mode {
+    background-color: var(--background-color-light); /* Light background */
+    color: var(--text-color-light); /* Dark text color */
+}
+
+header {
+    display: flex;
+    align-items: center; /* Aligne verticalement les éléments */
+    justify-content: center; /* Centre les éléments horizontalement */
+    background: var(--primary-color);
+    color: var(--text-color-dark);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid var(--secondary-color);
+}
+
+header img {
+    width: 150px; /* Taille de l'image de profil */
+    height: 150px; /* Taille de l'image de profil */
+    border-radius: 50%; /* Rend l'image circulaire */
+    margin-right: 20px; /* Espace entre l'image et le texte */
+}
+
+header.light-mode {
+    background: #f0f0f0;
+    color: #333;
+}
+
+header, .section, footer {
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+h1 {
+    font-size: 2.5em; /* Augmente la taille du titre */
+}
+
+p {
+    font-size: 1.2em; /* Augmente la taille de la description */
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background: var(--background-color-dark);
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(255, 64, 129, 0.5);
+    transition: box-shadow 0.3s;
+}
+
+section.light-mode {
+    background: var(--background-color-light); /* Light section background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section:hover {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: var(--primary-color);
+    color: var(--text-color-dark);
+}
+
+footer.light-mode {
+    background: #f0f0f0;
+    color: #333;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 150px;
+    height: auto;
+    margin: 5px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--text-color-dark);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
